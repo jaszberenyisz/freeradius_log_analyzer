@@ -1,16 +1,15 @@
-Freeradius LOG Analyzer
-
+<h1>Freeradius LOG Analyzer</h1>
 Created by Szabolcs Jászberényi
 
 
 
-Description:
+<h2>Description:</h2>
 
 A small terminal based tool to analyze freeradius log files and send statistic by e-mail automatically.
 
 
 
-Use cases:
+<h2>Use cases:</h2>
 
 You can use the script:
 
@@ -19,7 +18,7 @@ You can use the script:
 
 
 
-Dependencies:
+<h2>Dependencies:</h2>
 
 The script runs in terminal and written in PHP.
 
@@ -29,13 +28,13 @@ Debian based installation of dependencies: ```apt install php-cli mailutils```
 
 
 
-Installation:
+<h2>Installation:</h2>
 
 Copy all the program files basically to any directory you would like to.
 
 
 
-Configuration:
+<h2>Configuration:</h2>
 
 You need to configure booth files to work correctly:
 
@@ -46,7 +45,7 @@ You can do it by editting booth files configuration section.
 
 
 
-Automated reports:
+<h2>Automated reports:</h2>
 
 You can use cron scheduler to run the program and generate the report.
 
@@ -56,6 +55,6 @@ For example on a Debian based installation for a weekly report: ```ln -s YOUT_CR
 
 
 
-Licencing:
+<h2>Licencing:</h2>
 
 Software is licenced under GNU General Public Licence v3.0
