@@ -52,6 +52,7 @@ You can use cron scheduler to run the program and generate the report.
 Link the freeradius_log_analyzer_cron.sh file to one of cron's directorys.
 
 For example on a Debian based installation for a weekly report:
+
 ```ln -s YOUT_CRON_SCRIPT_FILE /etc/cron.weekly/freeradius_log_analyer.sh```
 
 
