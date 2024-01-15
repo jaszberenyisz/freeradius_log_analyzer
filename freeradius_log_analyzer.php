@@ -11,8 +11,8 @@ by Szabolcs Jaszberenyi
 // --------------------------------------------
   // LOG files location / directory
   $ld="/var/log/freeradius/";
-  // Working directory
-  $wd="/tmp/freeradius_log_analyzer";
+  // Working directory - automatically get working directory from passed arguments for less configuration
+  $wd=$argv["1"];
   // Temporary log file
   $tmp=$wd."/radius.log.tmp";
   // LOG (text only) output to this file
