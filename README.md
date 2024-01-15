@@ -35,6 +35,15 @@ Copy all the program file to basically any directory you would like to.
 
 
 
+Configuration:
+
+You need to configure booth files to work correctly:
+
+- freeradius_log_analyzer.php
+- freeradius_log_analyzer_cron.sh
+
+
+
 Licencing:
 
 Software is licenced under GNU General Public Licence v3.0
