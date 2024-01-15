@@ -31,7 +31,7 @@ Debian based installation of dependencies: ```apt install php-cli mailutils```
 
 Installation:
 
-Copy all the program file to basically any directory you would like to.
+Copy all the program files basically to any directory you would like to.
 
 
 
@@ -41,6 +41,18 @@ You need to configure booth files to work correctly:
 
 - freeradius_log_analyzer.php
 - freeradius_log_analyzer_cron.sh
+
+You can do it by editting booth files configuration section.
+
+
+
+Automated reports:
+
+You can use cron scheduler to run the program and generate the report.
+
+Link the freeradius_log_analyzer_cron.sh file to one of cron's directorys.
+
+For example on a Debian based installation for a weekly report: ```ln -s YOUT_CRON_SCRIPT_FILE /etc/cron.weekly/freeradius_log_analyer.sh```
 
 
 
