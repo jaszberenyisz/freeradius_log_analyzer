@@ -160,7 +160,7 @@ function nl()
     // Check for MAC address count?
     if ((int)$mac_warning>0)
     {
-      if ($uc>(int)$mac_warning) $hiba="!"._warning."! ".$k." "._uses_more_mac_addresses_than_treshold." ".(int)$mac_warning." "._pcs;
+      if ($uc>(int)$mac_warning) $hiba="!"._warning."! ".$k." "._uses_more_mac_addresses_than_treshold_value." ".(int)$mac_warning." "._pcs;
     }
     // Check for home directory?
     if ($home_check)
