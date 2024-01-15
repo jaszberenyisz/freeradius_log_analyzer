@@ -9,14 +9,16 @@ by Szabolcs Jaszberenyi
 // --------------------------------------------
 // Config section
 // --------------------------------------------
-  // LOG file location / directory
+  // LOG files location / directory
   $ld="/var/log/freeradius/";
+  // Working directory
+  $wd="/tmp/freeradius_log_analyzer"
   // Temporary log file
-  $tmp="/tmp/radius.log.tmp";
+  $tmp=$wd."/radius.log.tmp";
   // LOG (text only) output to this file
-  $outlog="/tmp/freeradius_log_analyzer.log";
+  $out_log=$wd."/freeradius_log_analyzer.log";
   // HTML output to this file
-  $outhtm="/tmp/freeradius_log_analyzer.htm";
+  $out_html=$wd."/freeradius_log_analyzer.htm";
   // AD/NT domain name
   $domain="EXAMPLE";
   // Output: false for TXT and true for HTML
@@ -136,10 +138,10 @@ function nl()
 // Processing data
 // --------------------------------------------
   ksort($adat);
-  $f=fopen($outlog,"w+");
+  $f=fopen($out_log,"w+");
   if ($html)
   {
-    $h=fopen($outhtm,"w+");
+    $h=fopen($out_html,"w+");
     fw('<html>');
     fw('<body>');
     fw('<div style="background: #ffffff; color: #000000;"><!-- Start body -->');
@@ -217,5 +219,5 @@ function nl()
 // --------------------------------------------
 // Print Warnings to STD OUT
 // --------------------------------------------
-  system('/bin/cat '.$outlog.' | /bin/grep " !"');
+  system('/bin/cat '.$out_log.' | /bin/grep " !"');
 ?>
