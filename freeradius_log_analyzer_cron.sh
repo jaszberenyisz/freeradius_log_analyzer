@@ -6,9 +6,9 @@ export term=linux
 #########################
 
 # Working directory
-WD="/root/tmp/"
+WD="/tmp/freeradius_log_analyzer"
 # Send the e-mail to this address
-send_to="admin@pagisz.hu"
+send_to="mail@example.com"
 
 #################################
 # Software dependencies section #
