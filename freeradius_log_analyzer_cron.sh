@@ -31,10 +31,12 @@ fi
 if [ ! -d "$WD" ]; then
   /bin/mkdir -p "$WD"
 fi
+# Current working directory
+CWD=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 # Change current working directory
 cd "$WD"
 # Run the LOG analyzer script
-$WD/freeradius_log_analyzer.php
+$CWD/freeradius_log_analyzer.php "$WD"
 # Get the output file that we want to send (TXT or HTML?)
 if [ -f $WD/"freeradius_log_analyzer.htm" ]; then
   fn=$WD/"freeradius_log_analyzer.htm"
