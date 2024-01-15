@@ -14,7 +14,9 @@ Dependencies:
 
 The script runs in terminal and written in PHP.
 
-Debian based installation: ```apt install php-cli```
+The cron scheduler uses mailutils to send the HTML based message.
+
+Debian based installation of dependencies: ```apt install php-cli mailutils```
 
 
 
