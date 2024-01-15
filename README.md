@@ -57,6 +57,6 @@ For example on a Debian based installation for a weekly report:
 
 
 
-<h2>Licencing:</h2>
+<h2>Licensing:</h2>
 
 Software is licenced under GNU General Public Licence v3.0
