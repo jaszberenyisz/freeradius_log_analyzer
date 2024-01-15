@@ -39,7 +39,7 @@ by Szabolcs Jaszberenyi
   // Check for home directory?
   $home_check=true;
   // Home directory path - only if we are checking them
-  $home_path="/home"
+  $home_path="/home";
   /*
   Exclude from home directory check - for service accounts
   If it's empty, we won't exclude anyone
